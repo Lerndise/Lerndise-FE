@@ -122,12 +122,12 @@ const LandingPage = () => {
         <Search />
         <SubjectTabsCarousel />
       </section>
-      {/* <section className="pb-[80px] flex flex-col gap-4">
+      <section className="pb-[80px] flex flex-col gap-4">
         <h3 className="text-center text-4xl font-bold text-lerndise-purple">
           Testimonials
         </h3>
         <Testimonial />
-      </section> */}
+      </section>
       {/* <section className="px-4 lg:px-[100px] flex flex-col gap-4">
         <h3 className="text-center text-4xl font-bold text-lerndise-purple">
           Latest News and Resources

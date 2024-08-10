@@ -43,7 +43,7 @@ const CarouselX: React.FC<PropType> = (props) => {
                       {s.author}
                     </p>
                   </CardHeader>
-                  <CardContent className="hidden md:block">
+                  <CardContent className="">
                     <p className="text-custom-text-body font-bodyRegularFont text-sm font-light">
                       {s.about}
                     </p>
