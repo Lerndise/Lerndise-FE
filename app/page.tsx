@@ -118,10 +118,10 @@ const LandingPage = () => {
         </div>
         <Features />
       </section>
-      {/* <section className="pt-[80px]">
+      <section className="px-4 md:px-10 my-8">
         <Search />
         <SubjectTabsCarousel />
-      </section> */}
+      </section>
       {/* <section className="pb-[80px] flex flex-col gap-4">
         <h3 className="text-center text-4xl font-bold text-lerndise-purple">
           Testimonials

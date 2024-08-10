@@ -65,7 +65,7 @@ const CustomSearch = ({
   };
 
   return (
-    <div className="relative lg:w-[900px] no-select">
+    <div className="relative w-[280px] lg:w-[600px] no-select">
       <Select
         options={options}
         onChange={onChange}

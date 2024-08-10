@@ -103,10 +103,10 @@ const SubjectCarousel: React.FC<SubjectCarouselProps> = ({ subjects }) => {
 
 const SubjectTabsCarousel: React.FC = () => {
   return (
-    <div className="w-full px-[100px] py-[100px]">
+    <div className="w-full my-5 px-5 lg:px-[100px] lg:my-[100px]">
       <Tabs defaultValue="Science" className="w-full">
         <div className="grid grid-cols-2 items-center">
-          <h2 className="text-xl font-bold mb-4">Popular subjects</h2>
+          <h2 className="text-base lg:text-xl font-bold mb-4">Popular subjects</h2>
           <TabsList className="w-auto justify-start bg-white mb-4">
             {Object.keys(subjectsData).map((category) => (
               <TabsTrigger key={category} value={category} className="mr-6">
