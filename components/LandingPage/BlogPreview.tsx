@@ -29,8 +29,8 @@ const BlogPreview = () => {
     },
   ];
   return (
-    <div className="grid gap-8 grid-cols-2">
-      <div className="flex flex-col gap-3">
+    <div className="grid gap-10 xl:grid-cols-2">
+      <div className="flex flex-col md:items-center lg:items-start gap-3">
         <Image src={Blog1} alt="Blog preview image 1" />
         <Badge className="bg-lerndise-purple h-[37px] w-[106px] flex justify-center">
           News
@@ -51,16 +51,16 @@ const BlogPreview = () => {
           </Button>
         </div>
       </div>
-      <div className="flex flex-col gap-6">
+      <div className="grid md:grid-cols-2 gap-6 xl:grid-cols-1">
         {blogPreview.map((blog) => (
-          <div key={blog.id} className="flex gap-3">
+          <div key={blog.id} className="flex flex-col xl:flex-row gap-3">
             <Image
               src={blog.img}
               className="h-[132px] object-cover"
               alt="Blog preview image 1"
             />
             <div>
-              <div className="w-[300px] flex flex-col gap-2">
+              <div className="w-[300px] md:w-auto flex flex-col gap-2">
                 <h3 className="text-sm font-bold">{blog.title}</h3>
                 <p className="text-xs">{blog.context}</p>
               </div>
