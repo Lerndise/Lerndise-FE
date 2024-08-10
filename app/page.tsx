@@ -50,10 +50,20 @@ const LandingPage = () => {
       <section className="border-b border-solid border-nav-border">
         <NavBar />
       </section>
-      <div className="px-4 lg:px-[100px] bg-grey-100 lg:py-[100px]">
-        <section className="flex gap-10 justify-between">
+      <div className="px-4 lg:px-[100px] bg-grey-100 py-[50px] lg:py-[100px]">
+        <section className="flex flex-col-reverse gap-20 lg:flex-row lg:gap-10 justify-between">
           <div className="flex flex-col gap-8">
-            <Text>
+            <Text
+              header={
+                <>
+                  Unlock{" "}
+                  <span className="text-lerndise-purple">
+                    Limitless Learning{" "}
+                  </span>
+                  Possibilities
+                </>
+              }
+            >
               Our AI powered Learning Management platform creates an immersive
               educational experience tailored to individual needs, increase the
               motivation and participation of students in primary and secondary
@@ -72,7 +82,7 @@ const LandingPage = () => {
           <HeroImage />
         </section>
       </div>
-      <div className="bg-lerndise-purple py-[80px] flex flex-col gap-8">
+      {/* <div className="bg-lerndise-purple py-[80px] flex flex-col gap-8">
         <section className="flex justify-center">
           <div className="w-[300px] lg:w-[724px] flex flex-col gap-3 text-white">
             <h3 className="text-white font-headingFont font-semibold text-center text-3xl md:text-4xl lg:text-5xl">
@@ -96,8 +106,8 @@ const LandingPage = () => {
             />
           ))}
         </section>
-      </div>
-      <section className="py-[80px] bg-grey-100 my-8">
+      </div> */}
+      {/* <section className="py-[80px] bg-grey-100 my-8">
         <div className="flex flex-col items-center gap-6">
           <h3 className="font-headingFont font-semibold text-center text-3xl md:text-4xl text-balance">
             {" "}
@@ -107,26 +117,26 @@ const LandingPage = () => {
           <BeautifulButton>Let's get started</BeautifulButton>
         </div>
         <Features />
-      </section>
-      <section className="pt-[80px]">
+      </section> */}
+      {/* <section className="pt-[80px]">
         <Search />
         <SubjectTabsCarousel />
-      </section>
-      <section className="pb-[80px] flex flex-col gap-4">
+      </section> */}
+      {/* <section className="pb-[80px] flex flex-col gap-4">
         <h3 className="text-center text-4xl font-bold text-lerndise-purple">
           Testimonials
         </h3>
         <Testimonial />
-      </section>
-      <section className="px-4 lg:px-[100px] flex flex-col gap-4">
+      </section> */}
+      {/* <section className="px-4 lg:px-[100px] flex flex-col gap-4">
         <h3 className="text-center text-4xl font-bold text-lerndise-purple">
           Latest News and Resources
         </h3>
         <BlogPreview />
-      </section>
-      <section>
+      </section> */}
+      {/* <section>
         <Footer />
-      </section>
+      </section> */}
     </div>
   );
 };

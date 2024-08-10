@@ -17,7 +17,7 @@ const NavBar = () => {
   ];
 
   return (
-    <div className="flex items-center justify-between px-4 lg:px-[100px] py-4">
+    <div className="flex items-center justify-between px-4 xl:px-[100px] py-4">
       <Brand />
       <section className="lg:hidden">
         <MobileNav />
