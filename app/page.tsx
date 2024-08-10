@@ -22,26 +22,26 @@ const LandingPage = () => {
     {
       id: 1,
       img: Img1,
-      title: "Interactive and adaptive Learning",
-      text: "We Tailor material to each student’s needs, real-time assessment, tailored guidance and personalized experience.",
+      title: "Personalised and Adaptive learning",
+      text: "By analyzing students data in real time, our platform adapts to provide tailored learning and assessment, ensuring that every student can learn at their own pace and excel.",
     },
     {
       id: 2,
       img: Img2,
-      title: "Course Content Generation",
-      text: "Our Learning Platform generates course materials, reducing the Teachers’ workload, thereby making it accessible, efficient and cost effective.",
+      title: "Course content generation",
+      text: "AI tools for efficient course content creation, reducing the teacher's workload, thereby making it accessible, time-saving, and cost-effective.",
     },
     {
       id: 3,
       img: Img3,
-      title: "Data Management, AI and machine learning",
-      text: "Data extraction, automate cataloguing, and improve data quality is our priority.",
+      title: "Data Management and Machine learning",
+      text: "Enhance your data quality with automated extraction, seamless cataloging and intelligent insight with actionable information.",
     },
     {
       id: 4,
       img: Img4,
       title: "Customer Support",
-      text: "We ensure our customers are successful in solving the challenges they might face.",
+      text: "We ensure our customers get the most out of our platform, providing assistance to help overcome challenges, every step of the way.",
     },
   ];
 
@@ -64,10 +64,11 @@ const LandingPage = () => {
                 </>
               }
             >
-              Our AI powered Learning Management platform creates an immersive
-              educational experience tailored to individual needs, increase the
-              motivation and participation of students in primary and secondary
-              school.
+              Experience an AI-powered learning management platform designed to
+              foster success and participation. Tailored to meet the needs of
+              primary and secondary school students, teachers, parents, and
+              school administrators, our solution elevates learning with
+              personalized experiences, boosting motivation.
             </Text>
             <div className="font-bodyMediumFont flex gap-3 items-center mt-4">
               <BeautifulButton width="230px">Get Started</BeautifulButton>
@@ -90,9 +91,10 @@ const LandingPage = () => {
               Why use Lerndise?
             </h3>
             <p className="text-center text-custom-text-body font-bodyRegularFont text-base md:text-xl">
-              Unlock the world of possibilities with our world class
-              comprehensive package. Gain access to expert-led courses,
-              interactive learning tools and our AI driven learning environment.
+              Gain access to personalised learning experiences, inclusive and
+              interactive tools, and an AI driven environment that adapts to
+              individual needs and enhance collaboaration across your entire
+              educational community.
             </p>
           </div>
         </section>

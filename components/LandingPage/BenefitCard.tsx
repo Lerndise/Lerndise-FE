@@ -9,7 +9,7 @@ interface BenefitCardProps {
 
 const BenefitCard = ({ img, title, text }: BenefitCardProps) => {
   return (
-    <Card className="w-[270px] h-[400px]">
+    <Card className="w-[270px] h-[450px]">
       <CardHeader className="">
         <div className="flex justify-center">
           <Image
