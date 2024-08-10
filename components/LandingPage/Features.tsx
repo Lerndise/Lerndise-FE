@@ -106,44 +106,44 @@ const Features: React.FC = () => {
       image: Admin,
       title: "School Management Solution",
       description:
-        "Track your administrative tasks, ranging from student management, Attendance tracking, course management, Financial management, Library management, Time table generation, Staff management, Exam management Report and Analytics",
+        "Get comprehensive insights into institution wide administrative activities ranging from student management, attendance tracking, lesson management, financial management, library management, staff management, report and analytics, allowing for data-driven decision-making, forward-thinking, and strategic planning.",
     },
     {
       image: Students,
       title: "Student Learning Portal",
       description:
-        "Student being able to track their course registrations, class attendance, all gradings and communicate with their teachers.",
+        "Inclusive by design, and accessible to all, our platform enables students to track their lessons, attendance, and grades while simultaneously developing social-emotional skills alongside academic knowledge. We provide holistic development, promoting personal growth for a well rounded educational experience.",
     },
     {
       image: Teachers,
       title: "Teachers Copilot",
       description:
-        "We designed it to assist teachers in their teaching journey, providing personalized lesson planning, student engagement strategies, assess student progress and real-time feedback.",
+        "Designed to support teachers by offering lesson planning, student engagement strategies, progress assessments, and feedback. Our platform empowers teachers to focus on impactful teaching while continuously advancing professional growth.",
     },
 
     {
       image: Parents,
       title: "Parents and Guardian Connect",
       description:
-        "Easily Track your kids performance, communicate with the teachers and be part of kids learning growth",
+        "Stay engaged with your child’s educational journey. This offers real-time updates on students' performance, facilitates communications with teachers, and keeps you actively involved in your Child's learning growth.",
     },
     {
       image: Finance,
       title: "Finance management",
       description:
-        "Maintain positive cash flow, manage budgets, identify financial errors, project your school’s financial needs, allocate funds for growth, and prepare for unexpected events.",
+        "Maintain positive cash flow, manage budgets effectively, identify financial discrepancies, and project future financial needs. Lerndise supports strategic fund allocation for growth.",
     },
     {
       image: Communication,
       title: "Communication Management",
       description:
-        "We encourage open dialogue between teachers, students, and parents. Manage regular newsletters, parent-teacher conferences, and school events",
+        "Encourage seamless communication within your school community ensuring everyone stays informed and engaged. We support dialogue, between teachers, students, and parents and facilitate the management of newsletters, parent-teachers conferences, and school events.",
     },
     {
       image: MarketPlace,
-      title: "Lerndise EduMarketplace",
+      title: "Lerndise Edu Marketplace",
       description:
-        "Track your administrative tasks, ranging from student management, Attendance tracking, course management, Financial management, Library management, Time table generation, Staff management, Exam management Report and Analytics",
+        "Discover a vibrant ecosystem of educational resources that connects educators and students. Whether you're looking for innovative lesson plan, supplementary learning resources, or specialised educational tools, engage with a community of professionals that align with your educational goals.",
     },
   ];
 

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import React from "react";
 import Blog1 from "@/public/Blog1.png";
@@ -38,12 +39,13 @@ const BlogPreview = () => {
         <div>
           <div className="w-[300px] flex flex-col gap-2">
             <h3 className="text-sm font-bold">
-              Class adds $30 million to its balance sheet for a zoom-friendly
-              edtech solution.
+              Inclusive Intelligence: The Impact of AI on Education for all
+              Learners
             </h3>
             <p className="text-xs">
-              Class launched less than a year ago by blackboard co-founder
-              michael chasen integrates exclusively{" "}
+              Artificial Intelligence (AI) could revolutionize higher education
+              by enhancing efficiency, inclusivity, and responsiveness to
+              21st-century challenges across various institutions.
             </p>
           </div>
           <Button variant="link" className="w-auto p-0">
