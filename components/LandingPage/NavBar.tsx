@@ -4,6 +4,7 @@ import { Button } from "../ui/button";
 import ContactIcon from "@/public/ContactIcon.svg";
 import Image from "next/image";
 import MobileNav from "./MobileNav";
+import BeautifulButton from "@/components/LandingPage/BeautifulButton";
 
 const NavBar = () => {
   const navList = [
@@ -16,7 +17,7 @@ const NavBar = () => {
   ];
 
   return (
-    <div className="flex items-center justify-between px-4 lg:px-[100px] py-4">
+    <div className="flex items-center justify-between px-4 xl:px-[100px] py-4">
       <Brand />
       <section className="lg:hidden">
         <MobileNav />
@@ -49,9 +50,7 @@ const NavBar = () => {
             </Button>
           </Link>
           <Link className="hidden lg:block" target="blank" href="/">
-            <Button className="w-[154px] h-[40px] text-white text-lg font-bodyBoldFont px-4 py-4 bg-lerndise-purple rounded-full">
-              Book a Demo
-            </Button>
+            <BeautifulButton width="154px" height="40px" fontSize="1rem" borderRadius="9999px">Book a Demo</BeautifulButton>
           </Link>
         </div>
       </div>
