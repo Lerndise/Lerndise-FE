@@ -10,6 +10,12 @@
       max-width: 100%;
     }
   }
+
+  @media (max-width: 320px) {
+    .embla {
+      max-width: 98%;
+    }
+  }
   @media (max-width: 500px) {
     .embla {
       width: 410px;
