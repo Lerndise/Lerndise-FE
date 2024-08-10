@@ -78,3 +78,7 @@
     font-family: var(--font-montserrat);
   }
 }
+
+.type-animation .purple {
+  color: #8E39E8;
+}

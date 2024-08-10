@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState } from "react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { AlignRight } from "lucide-react";
@@ -8,6 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ContactIcon from "@/public/ContactIcon.svg";
 import { Button } from "../ui/button";
+import BeautifulButton from "@/components/LandingPage/BeautifulButton";
 
 const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -58,12 +58,7 @@ const MobileNav = () => {
             </Button>
           </Link>
           <Link className="" target="blank" href="/">
-            <Button
-              onClick={handleLinkClick}
-              className="w-[154px] h-[40px] text-white text-lg font-bodyBoldFont px-4 py-4 bg-lerndise-purple rounded-full"
-            >
-              Book a Demo
-            </Button>
+            <BeautifulButton onClick={handleLinkClick} width="154px" height="40px" fontSize="1rem" borderRadius="9999px">Book a Demo</BeautifulButton>
           </Link>
         </div>
       </SheetContent>
