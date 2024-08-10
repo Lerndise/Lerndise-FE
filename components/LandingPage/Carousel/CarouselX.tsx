@@ -31,7 +31,7 @@ const CarouselX: React.FC<PropType> = (props) => {
           {slides.map((s) => (
             <div key={s.id} className={`${styles.embla__slide}`}>
               <div className={`${styles.embla__slide__number}`}>
-                <Card className="bg-custom-black-100 w-[300px] md:w-[475px] h-[400px] p-[19.5px] lg:p-[40px] !border !border-custom-black-300 rounded-none">
+                <Card className="bg-custom-black-100 w-[300px] md:w-[475px] h-[450px] p-[19.5px] lg:p-[40px] !border !border-custom-black-300 rounded-none">
                   <CardHeader className="flex gap-4">
                     <Image
                       className="object-cover"
