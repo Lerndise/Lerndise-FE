@@ -50,7 +50,7 @@ const LandingPage = () => {
       <section className="border-b border-solid border-nav-border">
         <NavBar />
       </section>
-      <div className="px-4 lg:px-[100px] bg-grey-100 py-[50px] lg:py-[100px]">
+      <div className="px-4 md:px-10 lg:px-[100px] bg-grey-100 py-[50px] lg:py-[100px]">
         <section className="flex flex-col-reverse gap-20 lg:flex-row lg:gap-10 justify-between">
           <div className="flex flex-col gap-8">
             <Text
@@ -82,9 +82,9 @@ const LandingPage = () => {
           <HeroImage />
         </section>
       </div>
-      {/* <div className="bg-lerndise-purple py-[80px] flex flex-col gap-8">
+      <div className="bg-lerndise-purple px-4 md:px-10 lg:px-0 py-[80px] flex flex-col gap-8">
         <section className="flex justify-center">
-          <div className="w-[300px] lg:w-[724px] flex flex-col gap-3 text-white">
+          <div className="w-auto lg:w-[724px] flex flex-col gap-3 text-white">
             <h3 className="text-white font-headingFont font-semibold text-center text-3xl md:text-4xl lg:text-5xl">
               {" "}
               Why use Lerndise?
@@ -96,7 +96,7 @@ const LandingPage = () => {
             </p>
           </div>
         </section>
-        <section className="flex gap-4 justify-center">
+        <section className="grid md:grid-cols-2 xl:grid-cols-4 content-center items-center gap-4 justify-items-center">
           {benefits.map((benefit) => (
             <BenefitCard
               key={benefit.id}
@@ -106,7 +106,7 @@ const LandingPage = () => {
             />
           ))}
         </section>
-      </div> */}
+      </div>
       {/* <section className="py-[80px] bg-grey-100 my-8">
         <div className="flex flex-col items-center gap-6">
           <h3 className="font-headingFont font-semibold text-center text-3xl md:text-4xl text-balance">
