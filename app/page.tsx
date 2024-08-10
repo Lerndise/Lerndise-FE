@@ -134,9 +134,9 @@ const LandingPage = () => {
         </h3>
         <BlogPreview />
       </section>
-      {/* <section>
+      <section>
         <Footer />
-      </section> */}
+      </section>
     </div>
   );
 };

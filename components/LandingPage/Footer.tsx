@@ -36,12 +36,14 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="bg-footer-bg flex flex-col gap-10 px-[100px] py-[40px] mt-[40px]">
+    <div className="bg-footer-bg flex flex-col gap-10 px-4 md:px-10 lg:px-[100px] py-[40px] mt-[40px]">
       <div className="flex flex-col gap-1">
-        <div className="flex justify-between items-center">
+        <div className="flex flex-col items-start gap-4 md:gap-0 md:flex-row md:justify-between md:items-center">
           <Brand />
           <div className="flex items-center gap-6">
-            <h3 className="text-sm font-semibold">Follow us on Social media</h3>
+            <h3 className="text-xs md:text-sm font-semibold">
+              Follow us on Social media
+            </h3>
             <section className="flex gap-4">
               <Button variant={"ghost"} className="p-0">
                 <Image src={Facebook} alt="Facebook Icon" />
@@ -60,7 +62,7 @@ const Footer = () => {
         </div>
         <Image src={Line} alt="Line" />
       </div>
-      <section className="text-black grid grid-cols-1 lg:grid-cols-[220px_220px_220px_1fr] lg:justify-between">
+      <section className="text-black grid gap-5 grid-cols-1 md:grid-cols-[120px_120px_100px_1fr]  lg:grid-cols-[150px_150px_150px_1fr]  xl:grid-cols-[220px_220px_220px_1fr] lg:justify-between">
         <div>
           <h3 className="lg:text-lg font-semibold">ABOUT</h3>
           {about.map((item) => (
