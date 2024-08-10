@@ -128,12 +128,12 @@ const LandingPage = () => {
         </h3>
         <Testimonial />
       </section>
-      {/* <section className="px-4 lg:px-[100px] flex flex-col gap-4">
+      <section className="px-4 lg:px-[100px] flex flex-col gap-4">
         <h3 className="text-center text-4xl font-bold text-lerndise-purple">
           Latest News and Resources
         </h3>
         <BlogPreview />
-      </section> */}
+      </section>
       {/* <section>
         <Footer />
       </section> */}
