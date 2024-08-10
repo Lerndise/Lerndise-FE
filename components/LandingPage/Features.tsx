@@ -59,7 +59,7 @@ const Section: React.FC<SectionProps> = ({
       initial="hidden"
       animate={controls}
       variants={variants}
-      className="flex flex-col md:flex-row md:items-center md:gap-4 my-20 md:w-[900px]"
+      className="flex flex-col md:flex-row md:items-center md:gap-4 my-20 md:w-[700px] lg:w-[900px]"
     >
       {imageFirst ? (
         <>

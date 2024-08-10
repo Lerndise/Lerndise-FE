@@ -107,17 +107,17 @@ const LandingPage = () => {
           ))}
         </section>
       </div>
-      {/* <section className="py-[80px] bg-grey-100 my-8">
+      <section className="px-4 md:px-10 py-[50px] lg:py-[80px] bg-grey-100 my-8">
         <div className="flex flex-col items-center gap-6">
-          <h3 className="font-headingFont font-semibold text-center text-3xl md:text-4xl text-balance">
+          <h3 className="xl:w-[700px] 2xl:w-[1000px] font-semibold text-center text-2xl md:text-4xl text-balance">
             {" "}
             Easily manage all Your school activities here; Teachers, Students,
             parents, Overall School administration
           </h3>
-          <BeautifulButton>Let's get started</BeautifulButton>
+          <BeautifulButton width="300px">Let's get started</BeautifulButton>
         </div>
         <Features />
-      </section> */}
+      </section>
       {/* <section className="pt-[80px]">
         <Search />
         <SubjectTabsCarousel />
