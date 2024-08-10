@@ -17,7 +17,7 @@ const Search = () => {
   };
   return (
     <div className="flex flex-col gap-8 items-center justify-center">
-      <h3 className="text-center font-semibold text-3xl w-[600px]">Search among our interactive lessons across all topics</h3>
+      <h3 className="text-center font-semibold text-xl md:text-3xl lg:w-[500px] xl:w-[600px]">Search among our interactive lessons across all topics</h3>
       <CustomSearch
         options={options}
         onChange={handleChange}
