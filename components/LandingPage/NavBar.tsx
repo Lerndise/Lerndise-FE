@@ -9,7 +9,7 @@ import BeautifulButton from "@/components/LandingPage/BeautifulButton";
 const NavBar = () => {
   const navList = [
     { id: 1, name: "Products", to: "/" },
-    { id: 2, name: "Edu Marketplace", to: "/" },
+    { id: 2, name: "EduMarketplace", to: "/" },
     { id: 3, name: "Blog", to: "/" },
     { id: 4, name: "About Us", to: "/" },
     { id: 5, name: "FAQs", to: "/" },
