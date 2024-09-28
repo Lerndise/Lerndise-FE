@@ -61,7 +61,7 @@ const Verification = () => {
           </p>
         </section>
         <section className="flex items-center gap-5">
-          <Link href="/admin/auth/signin">
+          <Link href="/admin/auth/login">
             <Button variant="outline" className="bg-lerndise-purple text-white">
               Continue
             </Button>
