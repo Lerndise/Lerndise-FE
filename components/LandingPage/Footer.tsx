@@ -19,7 +19,6 @@ const Footer = () => {
     { id: 2, name: "About us", link: "/" },
     { id: 3, name: "Blog", link: "/" },
     { id: 4, name: "Products", link: "/" },
-    { id: 5, name: "Contact", link: "/" },
   ];
   const categories = [
     { id: 1, name: "Science", link: "/" },
