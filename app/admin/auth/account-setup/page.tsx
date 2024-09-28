@@ -23,6 +23,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import RadioControl from "@/components/Form/RadioControl";
+import DatePickerControl from "@/components/Form/DatePickerControl";
 
 const schema = z.object({
   name_of_school: z.string().min(2).max(20),
@@ -31,13 +32,16 @@ const schema = z.object({
     .string()
     .min(11, { message: "Your phone number must contain up to 11 digits" })
     .max(11),
-  category: z.enum(["public", "private", ""], {
+  category: z.enum(["Government", "Private", ""], {
     required_error: "You need to select a notification type.",
   }),
   state: z.string().min(2).max(20),
   ube_number: z.string().min(2).max(20),
   seb_number: z.string().min(2).max(20),
-  year_founded: z.number().min(2),
+  year_founded: z.string().min(2).max(20),
+  // year_founded: z.date({
+  //   required_error: "Year founded is required.",
+  // }),
 });
 
 type formData = z.infer<typeof schema>;
@@ -60,6 +64,10 @@ const AdminSchoolRegister = () => {
       address: "",
       phone: "",
       category: "",
+      state: "",
+      ube_number: "",
+      seb_number: "",
+      year_founded: "",
     },
   });
 
@@ -67,11 +75,9 @@ const AdminSchoolRegister = () => {
   const onSubmit = (values: formData) => {
     setIsLoading(true);
     axiosInstance
-      .post("/login/", values)
+      .post("/register-school/complete/", values)
       .then((res) => {
-        toast.success("Logged in successfull");
-        localStorage.setItem("access_token", res.data.access_token);
-        localStorage.setItem("refresh_token", res.data.access_token);
+        toast.success("Account setup successfully");
         router.push("/admin/dashboard");
         form.reset();
         setIsLoading(false);
@@ -83,8 +89,8 @@ const AdminSchoolRegister = () => {
   };
 
   const options = [
-    { value: "public", label: "Public" },
-    { value: "private", label: "Private" },
+    { value: "Government", label: "Government" },
+    { value: "Private", label: "Private" },
   ];
 
   return (
@@ -135,7 +141,7 @@ const AdminSchoolRegister = () => {
                                 />
                                 <RadioControl
                                   control={form.control}
-                                  name="preference"
+                                  name="category"
                                   label="Select your preference:"
                                   options={options}
                                   defaultValue="option1"
@@ -158,22 +164,27 @@ const AdminSchoolRegister = () => {
                                 />
                                 <InputControl
                                   control={form.control}
-                                  name="ube_address"
+                                  name="ube_number"
                                   label="UBE Number"
-                                  placeholder="Enter your school address"
+                                  placeholder="Enter your school UBE number"
                                 />
                                 <InputControl
                                   control={form.control}
                                   name="seb_number"
                                   label="SEB Number"
-                                  placeholder="Enter your school address"
+                                  placeholder="Enter your school SEB number"
                                 />
                                 <InputControl
                                   control={form.control}
                                   name="year_founded"
                                   label="Year Founded"
-                                  placeholder="Enter the year the school was founded"
+                                  placeholder="2000-04-09"
                                 />
+                                {/* <DatePickerControl
+                                  control={form.control}
+                                  name="year_founded"
+                                  label="Year Founded"
+                                /> */}
                                 <div className="flex justify-center">
                                   <Button
                                     className="py-5 w-[200px] rounded-[30px] text-sm"
