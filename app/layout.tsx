@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat, Open_Sans } from "next/font/google";
+import "../components/DashboardPage/styles/tailwind.css";
+import "../components/DashboardPage/styles/index.css";
 import "./globals.css";
 
 const montserrat = Montserrat({ 
