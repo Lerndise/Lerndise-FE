@@ -2,5 +2,7 @@
     "typescript.tsdk": "node_modules\\typescript\\lib",
     "files.associations": {
         "*.css": "tailwindcss"
-      }
+      },
+      "files.autoSave": "afterDelay",
+      "terminal.integrated.defaultProfile.windows": "PowerShell"
 }
