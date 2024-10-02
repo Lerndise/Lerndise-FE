@@ -59,43 +59,22 @@ const Section: React.FC<SectionProps> = ({
       initial="hidden"
       animate={controls}
       variants={variants}
-      className="flex flex-col md:flex-row md:items-center md:gap-4 my-20 md:w-[700px] lg:w-[900px]"
+      className="flex flex-col md:flex-row md:items-center md:gap-4 my-6 md:w-[700px] lg:w-[900px]"
     >
-      {imageFirst ? (
-        <>
-          <motion.div className="w-full md:w-1/2 h-auto mb-8 md:mb-0">
-            <Image
-              src={image}
-              alt={title}
-              className="rounded-md"
-              layout="responsive"
-            />
-          </motion.div>
-          <motion.div className="w-full md:w-1/2 md:pl-8">
-            <h2 className="text-2xl font-bold  mb-2 text-lerndise-purple">
-              {title}
-            </h2>
-            <p className="text-[15px]">{description}</p>
-          </motion.div>
-        </>
-      ) : (
-        <>
-          <motion.div className="w-full md:w-1/2 mb-8 md:mb-0">
-            <h2 className="text-2xl font-bold mb-2 text-lerndise-purple">
-              {title}
-            </h2>
-            <p className="text-[15px]">{description}</p>
-          </motion.div>
-          <motion.div className="w-full md:w-1/2 h-auto">
-            <Image
-              src={image}
-              alt={title}
-              className="rounded-md"
-              layout="responsive"
-            />
-          </motion.div>
-        </>
-      )}
+      <motion.div className="w-full md:w-1/2 h-auto mb-8 md:mb-0">
+        <Image
+          src={image}
+          alt={title}
+          className="rounded-md"
+          layout="responsive"
+        />
+      </motion.div>
+      <motion.div className="w-full md:w-1/2 md:pl-8">
+        <h2 className="text-2xl font-bold  mb-2 text-lerndise-purple">
+          {title}
+        </h2>
+        <p className="text-[15px]">{description}</p>
+      </motion.div>
     </motion.div>
   );
 };

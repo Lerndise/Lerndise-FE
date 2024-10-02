@@ -53,15 +53,21 @@ const config = {
           foreground: "hsl(var(--card-foreground))",
         },
         "lerndise-purple": "#8E39E8",
+        "lerndise-purple-100": "#440F7C",
+        "lerndise-orange": "#D65C13",
         "light-purple": "#fffafe",
         "nav-border": "#B4C1E4",
         "grey-100": "#EEECEC33",
+        "grey-200": "#F3F8FB",
         "footer-bg": "#F0F4F4",
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      boxShadow: {
+        'header': '0px 10px 20px 0px rgba(0, 0, 0, 0.10)',
       },
       keyframes: {
         "accordion-down": {
