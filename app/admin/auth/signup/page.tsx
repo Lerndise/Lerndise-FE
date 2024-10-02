@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 import Image from "next/image";
 import AdminSignupImage from "@/public/AdminSignup.png";
 import { Card, CardContent } from "@/components/ui/card";

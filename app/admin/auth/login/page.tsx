@@ -53,7 +53,8 @@ const AdminLogin = () => {
         toast.success("Logged in successfull");
         localStorage.setItem("access_token", res.data.access_token);
         localStorage.setItem("refresh_token", res.data.access_token);
-        router.push("/admin/dashboard");
+        localStorage.removeItem("email");
+        router.push("/admin/auth/account-setup");
         form.reset();
         setIsLoading(false);
       })

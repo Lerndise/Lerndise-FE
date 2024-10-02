@@ -37,13 +37,17 @@ const layout = ({ children }: AdminAuthProps) => {
         <section className="flex gap-4">
           <div className="relative h-10">
             <div className="absolute inset-0 bg-gradient-to-r from-[#C67250] via-[#D65C13] to-[#440F7C] rounded-lg blur-sm"></div>
-            <Button className="relative h-full bg-white text-black font-bold py-2 px-8 rounded-lg">
-              Login
-            </Button>
+            <Link href={"/admin/auth/login"}>
+              <Button className="relative h-full bg-white text-black font-bold py-2 px-8 rounded-lg hover:bg-[#D65C13] hover:text-white">
+                Login
+              </Button>
+            </Link>
           </div>
-          <Button className=" text-white bg-black font-bold py-2 px-8 rounded-lg">
-            Register
-          </Button>
+          <Link href="/admin/auth/signup">
+            <Button className=" text-white bg-black font-bold py-2 px-8 rounded-lg hover:bg-[#440F7C]">
+              Register
+            </Button>
+          </Link>
         </section>
       </section>
       <section className="bg-grey-200">{children}</section>
