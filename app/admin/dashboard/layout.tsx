@@ -1,12 +1,17 @@
 import SideNav from '@/components/DashboardPage/SideNav';
 import React from 'react'
 
-const page = () => {
+const adminLayout = ({
+    children,
+  }: Readonly<{
+    children: React.ReactNode;
+  }>) => {
   return (
     <div className='flex w-full items-start bg-white-a700'>
-      Hello from Home page for admin
+      <SideNav />
+      {children}
     </div>
   );
 }
 
-export default page;
+export default adminLayout;
