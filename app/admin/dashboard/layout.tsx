@@ -1,4 +1,5 @@
 import SideNav from '@/components/DashboardPage/SideNav';
+import Header from '@/components/Header';
 import React from 'react'
 
 const adminLayout = ({
@@ -9,7 +10,10 @@ const adminLayout = ({
   return (
     <div className='flex w-full items-start bg-white-a700'>
       <SideNav />
-      {children}
+      <section className='w-full'>
+        <Header />
+        {children}
+      </section>
     </div>
   );
 }
