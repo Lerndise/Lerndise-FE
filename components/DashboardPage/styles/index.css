@@ -50,3 +50,7 @@ a {
   align-items: center;
 }
 
+.active {
+  background: #454545;
+  color: #c0c0c0;
+}

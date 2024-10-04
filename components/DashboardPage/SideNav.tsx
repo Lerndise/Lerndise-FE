@@ -18,12 +18,18 @@ import Logout from "../../public/Logout.svg";
 import { MenuItem, Menu, Sidebar} from "react-pro-sidebar";
 import Brand from "./Brand2";
 import Brand2 from "./Brand2";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 interface Props {
   className?: string;
 }
 
 const SideNav = ({ ...props }: Props) => {
+  const pathname = usePathname()
+
+  const activePath = pathname.split("/")[3]
+  
   const [collapsed, setCollapsed] = React.useState(false);
 
   return (
@@ -57,14 +63,14 @@ const SideNav = ({ ...props }: Props) => {
           <MenuItem
             icon={<Image src={Home} alt="Home" className="h-[20px] w-[20px]" />}
           >
-            Home
+            <Link className={`link ${activePath === undefined ? 'active' : ''}`} href='/admin/dashboard'>Home</Link>
           </MenuItem>
           <MenuItem
             icon={
               <Image src={Admin} alt="Admin" className="h-[20px] w-[20px]" />
             }
           >
-            Admin
+            <Link className={`link ${activePath === 'admin' ? 'active' : ''}`} href='/admin/dashboard/admin'>Admin</Link>
           </MenuItem>
           <MenuItem
             icon={
@@ -75,7 +81,7 @@ const SideNav = ({ ...props }: Props) => {
               />
             }
           >
-            Finance Mgmt
+            <Link className={`link ${activePath === 'finance' ? 'active' : ''}`} href='/admin/dashboard/finance'>Finance Mgmt</Link>
           </MenuItem>
           <MenuItem
             icon={
@@ -86,7 +92,7 @@ const SideNav = ({ ...props }: Props) => {
               />
             }
           >
-            Academics
+            <Link className={`link ${activePath === 'academics' ? 'active' : ''}`} href='/admin/dashboard/academics'>Academics</Link>
           </MenuItem>
           <MenuItem
             icon={
@@ -97,14 +103,14 @@ const SideNav = ({ ...props }: Props) => {
               />
             }
           >
-            School Schedule
+            <Link className={`link ${activePath === 'schedule' ? 'active' : ''}`} href='/admin/dashboard/schedule'>School Schedule</Link>
           </MenuItem>
           <MenuItem
             icon={
               <Image src={Leave} alt="Leave" className="h-[20px] w-[20px]" />
             }
           >
-            Leave Schedule
+            <Link className={`link ${activePath === 'leave' ? 'active' : ''}`} href='/admin/dashboard/leave'>Leave Schedule</Link>
           </MenuItem>
           <MenuItem
             icon={
@@ -115,7 +121,7 @@ const SideNav = ({ ...props }: Props) => {
               />
             }
           >
-            Digital Library
+            <Link className={`link ${activePath === 'library' ? 'active' : ''}`} href='/admin/dashboard/library'>Digital Library</Link>
           </MenuItem>
           <MenuItem
             icon={
@@ -126,14 +132,14 @@ const SideNav = ({ ...props }: Props) => {
               />
             }
           >
-            Announcements
+            <Link className={`link ${activePath === 'anouncement' ? 'active' : ''}`} href='/admin/dashboard/anouncement'>Announcements</Link>
           </MenuItem>
           <MenuItem
             icon={
               <Image src={Health} alt="Health" className="h-[20px] w-[20px]" />
             }
           >
-            Health
+            <Link className={`link ${activePath === 'health' ? 'active' : ''}`} href='/admin/dashboard/health'>Health</Link>
           </MenuItem>
           <MenuItem
             icon={
@@ -144,7 +150,7 @@ const SideNav = ({ ...props }: Props) => {
               />
             }
           >
-            Notifications
+            <Link className={`link ${activePath === 'notifications' ? 'active' : ''}`} href='/admin/dashboard/notifications'>Notifications</Link>
           </MenuItem>
           <MenuItem
             icon={
@@ -155,7 +161,7 @@ const SideNav = ({ ...props }: Props) => {
               />
             }
           >
-            Settings
+            <Link className={`link ${activePath === 'settings' ? 'active' : ''}`} href='/admin/dashboard/settings'>Settings</Link>
           </MenuItem>
         </div>
         <div className="flex absolute bottom-0 mb-[24px] ">
